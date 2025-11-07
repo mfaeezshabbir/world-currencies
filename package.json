@@ -1,0 +1,28 @@
+{
+  "name": "world-currencies",
+  "version": "1.0.0",
+  "description": "A lightweight JSON dataset of world currencies with ISO codes, symbols, and country mappings.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"No tests yet. Add one maybe?\""
+  },
+  "keywords": [
+    "currencies",
+    "iso4217",
+    "country-currency",
+    "currency-symbols",
+    "dataset",
+    "json"
+  ],
+  "author": "mfaeezshabbir",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mfaeezshabbir/world-currencies"
+  },
+  "bugs": {
+    "url": "https://github.com/mfaeezshabbir/world-currencies/issues"
+  },
+  "homepage": "https://github.com/mfaeezshabbir/world-currencies#readme"
+}
