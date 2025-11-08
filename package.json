@@ -1,6 +1,6 @@
 {
   "name": "@mfaeezshabbir/world-currencies",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight JSON dataset of world currencies with ISO codes, symbols, and country mappings.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
