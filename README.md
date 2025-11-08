@@ -33,22 +33,39 @@ npm install @mfaeezshabbir/world-currencies --registry=https://registry.npmjs.or
 
 ## 🚀 Usage
 
-```js
-const { getAllCurrencies, getCurrencyByCountry, getCurrencyByCode } = require("@mfaeezshabbir/world-currencies");
+You can import this package in TypeScript or modern bundlers. The package is TypeScript-first and ships `.d.ts` declarations.
 
-// Get all currencies
+ESM / TypeScript:
+
+```ts
+import { getAllCurrencies, getCurrencyByCountry, getCurrencyByCode } from "@mfaeezshabbir/world-currencies";
+
 console.log(getAllCurrencies());
-
-// Get currency by country
 console.log(getCurrencyByCountry("Pakistan"));
-// → { country: "Pakistan", currency: "Pakistani rupee", symbol: "₨", code: "PKR" }
-
-// Get currency by ISO code
 console.log(getCurrencyByCode("USD"));
-// → { country: "United States", currency: "United States dollar", symbol: "$", code: "USD" }
+```
+
+CommonJS consumers can still import via `require` (Node will resolve `dist/index.js`):
+
+```js
+const { getAllCurrencies } = require("@mfaeezshabbir/world-currencies");
+console.log(getAllCurrencies());
 ```
 
 ---
+
+### TypeScript
+
+This package ships TypeScript declarations. You can import named exports in TypeScript or modern bundlers:
+
+```ts
+import { getAllCurrencies, getCurrencyByCode } from "@mfaeezshabbir/world-currencies";
+
+const all = getAllCurrencies();
+```
+
+The project also includes a `tsconfig.json` and a `src/` entry so you can run `npm run build` to generate `dist/` artifacts and `.d.ts` files.
+
 
 ## 📚 Data Format
 
