@@ -12,10 +12,11 @@ Perfect for **global apps**, **fintech projects**, and **currency converters**.
 
 ## 📦 Installation
 
-Install directly from npm:
+Install from npm:
+
 ```bash
 npm install @mfaeezshabbir/world-currencies
-````
+```
 
 or with yarn:
 
@@ -23,19 +24,13 @@ or with yarn:
 yarn add @mfaeezshabbir/world-currencies
 ```
 
-If your npm is misconfigured to use GitHub Packages, you can force the install from npmjs.org:
-
-```bash
-npm install @mfaeezshabbir/world-currencies --registry=https://registry.npmjs.org
-```
-
 ---
 
 ## 🚀 Usage
 
-You can import this package in TypeScript or modern bundlers. The package is TypeScript-first and ships `.d.ts` declarations.
+You can import this package in TypeScript or JavaScript. The package is TypeScript-first and ships with `.d.ts` type declarations.
 
-ESM / TypeScript:
+**ESM / TypeScript:**
 
 ```ts
 import { getAllCurrencies, getCurrencyByCountry, getCurrencyByCode } from "@mfaeezshabbir/world-currencies";
@@ -45,7 +40,7 @@ console.log(getCurrencyByCountry("Pakistan"));
 console.log(getCurrencyByCode("USD"));
 ```
 
-CommonJS consumers can still import via `require` (Node will resolve `dist/index.js`):
+**CommonJS:**
 
 ```js
 const { getAllCurrencies } = require("@mfaeezshabbir/world-currencies");
@@ -92,13 +87,9 @@ Each record in the dataset follows this structure:
 
 ---
 
-## ⚙️ Registry Tip
+## 🔧 Development
 
-If you ever see a 404 when installing, make sure your `.npmrc` file doesn’t contain:
-
-```
-@mfaeezshabbir:registry=https://npm.pkg.github.com/
-```
+Clone and install dependencies:
 
 If it does, remove that line.
 This package is published on **npmjs.org**, not GitHub Packages.
