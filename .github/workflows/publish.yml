@@ -26,10 +26,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Publish to npm
+      - name: Publish to npm Registry
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          # ensure npm uses the token and publishes the package
-          npm whoami || echo "Not authenticated yet"
-          npm publish --access public
+        run: npm publish --access public
