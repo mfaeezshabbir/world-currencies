@@ -1,6 +1,6 @@
 {
   "name": "@mfaeezshabbir/world-currencies",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight JSON dataset of world currencies with ISO codes, symbols, and country mappings.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,8 +29,7 @@
   "bugs": {
     "url": "https://github.com/mfaeezshabbir/world-currencies/issues"
   },
-  "homepage": "https://github.com/mfaeezshabbir/world-currencies#readme"
-,
+  "homepage": "https://github.com/mfaeezshabbir/world-currencies#readme",
   "files": [
     "dist",
     "currencies.json"
