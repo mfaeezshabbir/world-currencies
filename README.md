@@ -33,11 +33,12 @@ You can import this package in TypeScript or JavaScript. The package is TypeScri
 **ESM / TypeScript:**
 
 ```ts
-import { getAllCurrencies, getCurrencyByCountry, getCurrencyByCode } from "@mfaeezshabbir/world-currencies";
+import { getAllCurrencies, getCurrencyByCountry, getCurrencyByCode, getCurrencyBySymbol } from "@mfaeezshabbir/world-currencies";
 
 console.log(getAllCurrencies());
 console.log(getCurrencyByCountry("Pakistan"));
 console.log(getCurrencyByCode("USD"));
+console.log(getCurrencyBySymbol("$"));
 ```
 
 **CommonJS:**
@@ -84,6 +85,7 @@ Each record in the dataset follows this structure:
 | `getAllCurrencies()`            | Returns the full list of currencies                  |
 | `getCurrencyByCountry(country)` | Finds a currency by country name (case-insensitive)  |
 | `getCurrencyByCode(code)`       | Finds a currency by ISO 4217 code (case-insensitive) |
+| `getCurrencyBySymbol(symbol)`   | Finds a currency (list of array) by it's symbol      |
 
 ---
 
