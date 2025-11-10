@@ -40,3 +40,15 @@ export function getCurrencyByCode(code?: string): Currency | null {
   );
   return found || null;
 }
+
+
+/**
+ * Finds currency data (list of array) by it's symbol.
+ */
+export function getCurrencyBySymbol(symbol?: string): Currency[] | null {
+  if (!symbol) return null;
+  const found = currencies.filter(
+    (c) => (c.symbol || "") === symbol
+  );
+  return found || null;
+}
